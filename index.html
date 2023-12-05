@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: url('images/image4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+
+        h1 {
+            font-family: 'VotrePolice', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+    <title>Ô p'tit creux</title>
+    <style>
+        .pdf-container {
+            display: none; /* Masquer le conteneur par défaut */
+            width: 100%;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/image2.jpg" alt="Image d'en-tête">
+        <nav>
+            <a href="#menu" onclick="togglePDF()">menu</a>
+            <a href="#contact">à propos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="post-text-box">
+                <h1>L'espace idéal pour déguster des plats fantastiques</h1>
+                <section>
+                    <h1> Bienvenue dans l'univers délicieusement marocain de nos snacks.<br> Explorez une symphonie de saveurs authentiques et plongez dans l'art<br> de la collation à la marocaine. Chaque bouchée est une aventure gustative,<br> une fusion de traditions et de goûts qui transportent vos sens directement au cœur du Maroc.<br> Découvrez le plaisir simple et exquis de nos snacks,<br> conçus pour éveiller vos papilles et vous offrir une expérience culinaire mémorable.<br> Bienvenue à la croisée des saveurs, où l'authenticité rencontre la gourmandise.</h1>                  
+                </section>
+            </div>
+            <div class="pdf-container" id="pdf-container">
+                <object data="a5 menu-1.pdf" type="application/pdf" width="100%" height="100%"></object>
+            </div>
+            <div class="profile">
+                <img src="images/image3.jpg" style="width:300px;height:300px;">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a name="contact"></a>
+        <p>Informations de contact :</p>
+        <p class="contact-info">Téléphone : 02 98 55 96 06</p>
+        <p class="contact-info">Adresse : 2 place françois Bales zac du Bourg 29500 Ergué Gabéric</p>
+        <p class="contact-info">Email : optitcreux29500@gmail.com</p>
+        <p>Suivez-nous :</p>
+        <a href="https://instagram.com/o.ptit.creux?igshid=YTQwZjQ0NmI0OA==" target="_blank" class="social-link">Instagram</a>
+        <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function togglePDF() {
+            var pdfContainer = document.getElementById("pdf-container");
+            pdfContainer.style.display = (pdfContainer.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
